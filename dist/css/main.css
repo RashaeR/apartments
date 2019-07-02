@@ -1,2 +1,28 @@
-body {
-  background: grey; }
+* {
+  margin: 0;
+  padding: 0; }
+
+#nav {
+  text-align: right;
+  font-size: 36px;
+  padding: 25px;
+  background: #423d3c; }
+  #nav li {
+    display: inline; }
+  #nav ul {
+    list-style: none; }
+  #nav a {
+    text-decoration: none;
+    color: white; }
+  #nav a:hover {
+    color: #a9a2a1; }
+
+.main-img {
+  background: url(..img/apartment.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.test {
+  background: red; }
