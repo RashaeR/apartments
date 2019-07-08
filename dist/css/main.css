@@ -1,28 +1,94 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 #nav {
   text-align: right;
+  opacity: 0.6;
   font-size: 36px;
   padding: 25px;
-  background: #423d3c; }
+  background: #423d3c;
+  position: sticky; }
   #nav li {
-    display: inline; }
+    display: inline;
+    padding: 10px; }
   #nav ul {
     list-style: none; }
   #nav a {
     text-decoration: none;
     color: white; }
   #nav a:hover {
-    color: #a9a2a1; }
+    color: #776e6d; }
 
 .main-img {
-  background: url(..img/apartment.jpg);
+  height: 100vh;
+  background: url(../img/apartment.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative; }
 
-.test {
-  background: red; }
+#middle-nav {
+  text-align: center;
+  margin: 2em;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+.welcome {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: white;
+  background: black;
+  text-align: center; }
+  .welcome .side-1 {
+    height: 20em;
+    margin: 1em; }
+    .welcome .side-1 h2 {
+      font-size: 3em; }
+    .welcome .side-1 p {
+      font-size: 1.5em;
+      padding: 2em; }
+  .welcome .side-2 {
+    height: 100vh;
+    width: 100vh;
+    background: url(../img/apartment2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+
+.find {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/apartment3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute; }
+  .find .buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 3em;
+    margin-top: 50em;
+    position: fixed; }
+    .find .buttons .button {
+      padding: 2.5em 17em;
+      background: black;
+      opacity: 0.3;
+      border-style: none; }
+    .find .buttons .button:hover {
+      background: blue; }
+    .find .buttons .button-text, .find .buttons .button-text2 {
+      font-size: 2em;
+      color: white;
+      position: absolute;
+      top: -15px;
+      left: 1em;
+      z-index: 1;
+      pointer-events: none; }
+    .find .buttons .button-text2 {
+      font-size: 1.2em;
+      top: 24px;
+      left: 1.8em;
+      text-transform: uppercase; }
