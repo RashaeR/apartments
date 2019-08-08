@@ -4,20 +4,26 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 #nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   text-align: right;
   opacity: 0.6;
-  font-size: 36px;
-  padding: 25px;
-  background: #423d3c;
-  position: sticky; }
+  font-size: 25px;
+  padding: 15px;
+  background: #423d3c; }
   #nav li {
     display: inline;
     padding: 10px; }
   #nav ul {
     list-style: none; }
+    #nav ul .title {
+      margin-right: 45em;
+      color: white; }
   #nav a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    z-index: 2; }
   #nav a:hover {
     color: #776e6d; }
 
@@ -37,7 +43,7 @@
 
 .welcome {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   color: white;
   background: black;
   text-align: center; }
@@ -64,22 +70,22 @@
   background: url(../img/apartment3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  position: absolute; }
+  background-position: center; }
   .find .buttons {
-    display: grid;
-    grid-template-columns: auto auto auto;
     margin-left: 3em;
     margin-top: 50em;
-    position: fixed; }
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.5em; }
     .find .buttons .button {
-      padding: 2.5em 17em;
+      padding: 2.5em 17.5em;
       background: black;
       opacity: 0.3;
       border-style: none; }
     .find .buttons .button:hover {
       background: blue; }
-    .find .buttons .button-text, .find .buttons .button-text2 {
+    .find .buttons .b1 .button-text, .find .buttons .b2 .button-text, .find .buttons .b3 .button-text, .find .buttons .b1 .button-text2, .find .buttons .b2 .button-text2, .find .buttons .b3 .button-text2 {
       font-size: 2em;
       color: white;
       position: absolute;
@@ -87,8 +93,97 @@
       left: 1em;
       z-index: 1;
       pointer-events: none; }
-    .find .buttons .button-text2 {
+    .find .buttons .b1 .button-text2, .find .buttons .b2 .button-text2, .find .buttons .b3 .button-text2 {
       font-size: 1.2em;
       top: 24px;
       left: 1.8em;
       text-transform: uppercase; }
+    .find .buttons .b2 .button-text, .find .buttons .b2 .button-text2 {
+      left: 19em; }
+    .find .buttons .b2 .button-text2 {
+      left: 31.8em; }
+    .find .buttons .b3 .button-text, .find .buttons .b3 .button-text2 {
+      left: 37em; }
+    .find .buttons .b3 .button-text2 {
+      left: 61.8em; }
+
+.middle-welcome {
+  height: auto;
+  display: flex; }
+  .middle-welcome .middle-side1 {
+    width: 45%;
+    margin-left: 5em; }
+    .middle-welcome .middle-side1 h2 {
+      margin-top: 5em;
+      margin-bottom: 1em;
+      width: 80%;
+      font-size: 2.6em;
+      text-align: left; }
+    .middle-welcome .middle-side1 p {
+      width: 65%;
+      font-size: 1.4em;
+      text-align: left;
+      line-height: 2.5em; }
+  .middle-welcome .middle-side2 {
+    height: auto;
+    width: 27.5%;
+    background: url(../img/apartment4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 23.5em;
+    margin-left: -15em;
+    box-shadow: auto auto; }
+  .middle-welcome .middle-side3 {
+    height: 55em;
+    width: 35em;
+    background: blue;
+    margin: 13em 3em; }
+    .middle-welcome .middle-side3 h2 {
+      margin: 0 5em;
+      margin-top: 5em;
+      font-size: 1.4em;
+      text-align: center;
+      line-height: 2em;
+      color: white; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 40em auto;
+  height: 20em;
+  background: #676767;
+  color: grey;
+  position: relative; }
+  .footer .side1 {
+    text-align: center;
+    padding-top: 2em;
+    color: white; }
+  .footer .side2 {
+    background: #343434;
+    display: flex; }
+    .footer .side2 span {
+      position: absolute;
+      margin-left: 25em;
+      text-align: center;
+      align-self: flex-end; }
+    .footer .side2 .section-head {
+      margin-top: 2.5em;
+      margin-left: 8.5em;
+      position: absolute; }
+      .footer .side2 .section-head p {
+        display: inline;
+        padding-right: 10.2em;
+        font-size: 1.6em;
+        color: white; }
+    .footer .side2 ul {
+      margin-top: 6em;
+      margin-left: 8em;
+      list-style: none; }
+      .footer .side2 ul li {
+        display: block;
+        padding: 10px; }
+        .footer .side2 ul li a {
+          text-decoration: none;
+          color: grey;
+          font-size: 1.3em; }
+        .footer .side2 ul li a:hover {
+          color: lightgray; }

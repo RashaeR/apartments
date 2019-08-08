@@ -7,23 +7,31 @@
 }
 
 #nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   text-align: right;
   opacity: 0.6;
-  font-size: 36px;
-  padding: 25px;
+  font-size: 25px;
+  padding: 15px;
   background: $nav-background;
-  position: sticky;
+  //margin-top: -2.6em;
   li {
     display: inline;
     padding: 10px;
   }
   ul {
     list-style: none;
-  }
 
+    .title {
+      margin-right: 45em;
+      color: white;
+    }
+  }
   a {
     text-decoration: none;
     color: white;
+    z-index: 2;
   }
   a:hover {
     color: lighten($nav-background, 20);
@@ -47,10 +55,11 @@
 
 .welcome {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   color: white;
   background: black;
   text-align: center;
+
   .side-1 {
     height: 20em;
     margin: 1em;
@@ -82,39 +91,174 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
 
   .buttons {
-    display: grid;
-    grid-template-columns: auto auto auto;
     margin-left: 3em;
     margin-top: 50em;
-    position: fixed;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.5em;
     .button {
-      padding: 2.5em 17em;
+      padding: 2.5em 17.5em;
       background: black;
       opacity: 0.3;
-
       border-style: none;
     }
     .button:hover {
       background: blue;
     }
-    .button-text {
-      font-size: 2em;
-      color: white;
-      position: absolute;
-      top: -15px;
-      left: 1em;
-      z-index: 1;
-      pointer-events: none;
+
+    .b1 {
+      .button-text {
+        font-size: 2em;
+        color: white;
+        position: absolute;
+        top: -15px;
+        left: 1em;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .button-text2 {
+        @extend .button-text;
+        font-size: 1.2em;
+        top: 24px;
+        left: 1.8em;
+        text-transform: uppercase;
+      }
     }
-    .button-text2 {
-      @extend .button-text;
-      font-size: 1.2em;
-      top: 24px;
-      left: 1.8em;
-      text-transform: uppercase;
+
+    .b2 {
+      @extend .b1;
+
+      .button-text {
+        left: 19em;
+      }
+
+      .button-text2 {
+        left: 31.8em;
+      }
+    }
+
+    .b3 {
+      @extend .b1;
+
+      .button-text {
+        left: 37em;
+      }
+
+      .button-text2 {
+        left: 61.8em;
+      }
+    }
+  }
+}
+
+.middle-welcome {
+  height: auto;
+  display: flex;
+  .middle-side1 {
+    width: 45%;
+    margin-left: 5em;
+
+    h2 {
+      margin-top: 5em;
+      margin-bottom: 1em;
+      width: 80%;
+      font-size: 2.6em;
+      text-align: left;
+    }
+
+    p {
+      width: 65%;
+      font-size: 1.4em;
+      text-align: left;
+      line-height: 2.5em;
+    }
+  }
+
+  .middle-side2 {
+    height: auto;
+    width: 27.5%;
+    background: $side1-image;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 23.5em;
+    margin-left: -15em;
+    box-shadow: auto auto;
+  }
+
+  .middle-side3 {
+    height: 55em;
+    width: 35em;
+    background: blue;
+    margin: 13em 3em;
+
+    h2 {
+      margin: 0 5em;
+      margin-top: 5em;
+      font-size: 1.4em;
+      text-align: center;
+      line-height: 2em;
+      color: white;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 40em auto;
+  height: 20em;
+  background: darken($color: grey, $amount: 10);
+  color: grey;
+  position: relative;
+
+  .side1 {
+    text-align: center;
+    padding-top: 2em;
+    color: white;
+  }
+
+  .side2 {
+    background: darken($color: grey, $amount: 30);
+    display: flex;
+    span {
+      position: absolute;
+      margin-left: 25em;
+      text-align: center;
+      align-self: flex-end;
+    }
+
+    .section-head {
+      margin-top: 2.5em;
+      margin-left: 8.5em;
+      position: absolute;
+
+      p {
+        display: inline;
+        padding-right: 10.2em;
+        font-size: 1.6em;
+        color: white;
+      }
+    }
+
+    ul {
+      margin-top: 6em;
+      margin-left: 8em;
+      list-style: none;
+
+      li {
+        display: block;
+        padding: 10px;
+        a {
+          text-decoration: none;
+          color: grey;
+          font-size: 1.3em;
+        }
+        a:hover {
+          color: lightgray;
+        }
+      }
     }
   }
 }
