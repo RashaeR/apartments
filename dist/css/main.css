@@ -22,18 +22,36 @@
       color: white; }
   #nav a {
     text-decoration: none;
-    color: white;
-    z-index: 2; }
+    color: white; }
   #nav a:hover {
     color: #776e6d; }
 
-.main-img {
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: 50em 55em;
+  z-index: 1; }
+  .container .arrow {
+    padding-left: 25px; }
+  .container .arrow:hover {
+    cursor: pointer; }
+
+.slide {
   height: 100vh;
-  background: url(../img/apartment.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative; }
+
+.main-img {
+  background-image: url(../img/apartment.jpg); }
+
+.main-img2 {
+  background-image: url(../img/apt2.jpg); }
+
+.main-img3 {
+  background-image: url(../img/apt3.jpg); }
 
 #middle-nav {
   text-align: center;
@@ -79,7 +97,7 @@
     grid-template-columns: auto auto auto;
     grid-gap: 1.5em; }
     .find .buttons .button {
-      padding: 2.5em 17.5em;
+      padding: 2.5em 1em;
       background: black;
       opacity: 0.3;
       border-style: none; }
@@ -144,6 +162,9 @@
       font-size: 1.4em;
       text-align: center;
       line-height: 2em;
+      color: white; }
+    .middle-welcome .middle-side3 .icons {
+      margin: 5em 12.5em;
       color: white; }
 
 .footer {

@@ -31,20 +31,39 @@
   a {
     text-decoration: none;
     color: white;
-    z-index: 2;
   }
   a:hover {
     color: lighten($nav-background, 20);
   }
 }
-
-.main-img {
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: 50em 55em;
+  z-index: 1;
+  .arrow {
+    padding-left: 25px;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+}
+.slide {
   height: 100vh;
-  background: $main-image;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.main-img {
+  background-image: $main-image;
+}
+.main-img2 {
+  background-image: $main-image2;
+}
+.main-img3 {
+  background-image: $main-image3;
 }
 #middle-nav {
   text-align: center;
@@ -100,7 +119,7 @@
     grid-template-columns: auto auto auto;
     grid-gap: 1.5em;
     .button {
-      padding: 2.5em 17.5em;
+      padding: 2.5em 1em;
       background: black;
       opacity: 0.3;
       border-style: none;
@@ -200,6 +219,11 @@
       font-size: 1.4em;
       text-align: center;
       line-height: 2em;
+      color: white;
+    }
+
+    .icons {
+      margin: 5em 12.5em;
       color: white;
     }
   }

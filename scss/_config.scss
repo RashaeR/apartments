@@ -1,6 +1,12 @@
 $nav-background: #423d3c;
 $main-image: url(../img/apartment.jpg);
+$main-image2: url(../img/apt2.jpg);
+$main-image3: url(../img/apt3.jpg);
 $side-image: url(../img/apartment2.jpg);
 $find-image: url(../img/apartment3.jpg);
 $side1-image: url(../img/apartment4.jpg);
 $action-image: url(../img/action.jpg);
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

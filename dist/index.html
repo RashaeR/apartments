@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Apartments</title>
     <nav id="nav">
@@ -17,13 +22,19 @@
     </nav>
   </head>
   <body>
-    <div class="main-img"></div>
+    <div class="container">
+      <i class="arrow fas fa-chevron-left fa-4x" id="arrow-left"></i>
+      <i class="arrow fas fa-chevron-right fa-4x" id="arrow-right"></i>
+    </div>
+    <div class="slide main-img"></div>
+    <div class="slide main-img2"></div>
+    <div class="slide main-img3"></div>
     <div id="middle-nav">contact us to schedule your tour!</div>
 
     <div class="welcome">
-      <div class="side-1">
+      <div class="side-1 ">
         <h2>Welcome to Apartment</h2>
-        <p>
+        <p class="wow fadeIn" data-wow-duration="2s">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Exercitationem, quia. Et necessitatibus beatae optio nulla ex
           voluptate, expedita consequuntur corporis itaque praesentium? Magni
@@ -34,7 +45,7 @@
           exercitationem corporis?
         </p>
 
-        <p>
+        <p class="wow fadeIn" data-wow-duration="2s">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Exercitationem, quia. Et necessitatibus beatae optio nulla ex
           voluptate, expedita consequuntur corporis itaque praesentium? Magni
@@ -50,14 +61,14 @@
     </div>
 
     <div class="find">
-      <div class="buttons">
+      <div class="buttons wow fadeInUp">
         <div class="b1">
           <div class="button-text">Your Place on the Map</div>
           <div class="button-text2">Explore the Neighborhood</div>
           <a href="#" class="button"></a>
         </div>
 
-        <div class="b2">
+        <div class="b2 ">
           <div class="button-text">Your Personal Playground</div>
           <div class="button-text2">View Amenities</div>
           <a href="#" class="button"></a>
@@ -74,7 +85,7 @@
     <div class="middle-welcome">
       <div class="middle-side1">
         <h2>Above and Beyond Apartment Living</h2>
-        <p>
+        <p class="wow fadeInLeft" data-wow-duration="2s">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis consectetur, necessitatibus pariatur corporis officia non
           illum quam tenetur ipsum modi nulla consequuntur, rem, placeat
@@ -87,12 +98,19 @@
 
       <div class="middle-side2"></div>
       <div class="middle-side3">
-        <h2>
+        <h2 class="wow fadeInRight" data-wow-duration="2s">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a
           possimus in veritatis quos voluptas, reiciendis omnis, fugit dolorem
           sint corporis. Optio aut non minima quia, placeat commodi ratione
           praesentium.
         </h2>
+        <div class="icons wow fadeInUpBig" data-wow-duration="2s">
+          <i class="fas fa-star fa-lg"></i>
+          <i class="fas fa-star fa-lg"></i>
+          <i class="fas fa-star fa-lg"></i>
+          <i class="fas fa-star fa-lg"></i>
+          <i class="far fa-star fa-lg"></i>
+        </div>
       </div>
     </div>
 
@@ -123,5 +141,10 @@
         <span>Copyright &copy; 2019. Apartments. All rights reserved.</span>
       </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
