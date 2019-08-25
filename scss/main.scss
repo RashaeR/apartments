@@ -12,10 +12,10 @@
   z-index: 1;
   text-align: right;
   opacity: 0.6;
-  font-size: 25px;
+  font-size: 16px;
   padding: 15px;
   background: $nav-background;
-  //margin-top: -2.6em;
+
   li {
     display: inline;
     padding: 10px;
@@ -24,7 +24,7 @@
     list-style: none;
 
     .title {
-      margin-right: 45em;
+      margin-right: 55em;
       color: white;
     }
   }
@@ -40,7 +40,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  margin: 50em 55em;
+  margin: 10em 15em;
   z-index: 1;
   .arrow {
     padding-left: 25px;
@@ -69,7 +69,7 @@
   text-align: center;
   margin: 2em;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 
 .welcome {
@@ -84,10 +84,10 @@
     margin: 1em;
 
     h2 {
-      font-size: 3em;
+      font-size: 1.6rem;
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.2rem;
       padding: 2em;
     }
   }
@@ -112,14 +112,14 @@
   background-position: center;
 
   .buttons {
-    margin-left: 3em;
-    margin-top: 50em;
+    margin-left: 10em;
+    margin-top: 35em;
     position: absolute;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 1.5em;
     .button {
-      padding: 2.5em 1em;
+      padding: 1.8em 11em;
       background: black;
       opacity: 0.3;
       border-style: none;
@@ -130,19 +130,19 @@
 
     .b1 {
       .button-text {
-        font-size: 2em;
+        font-size: 1rem;
         color: white;
         position: absolute;
-        top: -15px;
+        top: -12px;
         left: 1em;
         z-index: 1;
         pointer-events: none;
       }
       .button-text2 {
         @extend .button-text;
-        font-size: 1.2em;
-        top: 24px;
-        left: 1.8em;
+        font-size: 1.2rem;
+        top: 10px;
+        left: 1rem;
         text-transform: uppercase;
       }
     }
@@ -151,11 +151,11 @@
       @extend .b1;
 
       .button-text {
-        left: 19em;
+        left: 24.5em;
       }
 
       .button-text2 {
-        left: 31.8em;
+        left: 20.5em;
       }
     }
 
@@ -163,11 +163,11 @@
       @extend .b1;
 
       .button-text {
-        left: 37em;
+        left: 48em;
       }
 
       .button-text2 {
-        left: 61.8em;
+        left: 40em;
       }
     }
   }
@@ -184,13 +184,13 @@
       margin-top: 5em;
       margin-bottom: 1em;
       width: 80%;
-      font-size: 2.6em;
+      font-size: 1.2rem;
       text-align: left;
     }
 
     p {
       width: 65%;
-      font-size: 1.4em;
+      font-size: 1rem;
       text-align: left;
       line-height: 2.5em;
     }
@@ -202,28 +202,30 @@
     background: $side1-image;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 23.5em;
-    margin-left: -15em;
+    margin-top: 15em;
+    margin-left: -10em;
     box-shadow: auto auto;
   }
 
   .middle-side3 {
-    height: 55em;
-    width: 35em;
+    height: 40rem;
+    width: 25rem;
     background: blue;
-    margin: 13em 3em;
+    margin: 8em 3em;
 
     h2 {
       margin: 0 5em;
       margin-top: 5em;
-      font-size: 1.4em;
+      font-size: 1rem;
       text-align: center;
       line-height: 2em;
       color: white;
     }
 
     .icons {
-      margin: 5em 12.5em;
+      display: inline-block;
+      margin: 4rem 7.6rem;
+
       color: white;
     }
   }
@@ -231,7 +233,7 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 40em auto;
+  grid-template-columns: 30em auto;
   height: 20em;
   background: darken($color: grey, $amount: 10);
   color: grey;
@@ -251,6 +253,7 @@
       margin-left: 25em;
       text-align: center;
       align-self: flex-end;
+      margin: 0 220px;
     }
 
     .section-head {
@@ -260,8 +263,8 @@
 
       p {
         display: inline;
-        padding-right: 10.2em;
-        font-size: 1.6em;
+        padding-right: 15em;
+        font-size: 1rem;
         color: white;
       }
     }
@@ -277,7 +280,7 @@
         a {
           text-decoration: none;
           color: grey;
-          font-size: 1.3em;
+          font-size: 1rem;
         }
         a:hover {
           color: lightgray;

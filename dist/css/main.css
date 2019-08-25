@@ -9,7 +9,7 @@
   z-index: 1;
   text-align: right;
   opacity: 0.6;
-  font-size: 25px;
+  font-size: 16px;
   padding: 15px;
   background: #423d3c; }
   #nav li {
@@ -18,7 +18,7 @@
   #nav ul {
     list-style: none; }
     #nav ul .title {
-      margin-right: 45em;
+      margin-right: 55em;
       color: white; }
   #nav a {
     text-decoration: none;
@@ -30,7 +30,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  margin: 50em 55em;
+  margin: 10em 15em;
   z-index: 1; }
   .container .arrow {
     padding-left: 25px; }
@@ -57,7 +57,7 @@
   text-align: center;
   margin: 2em;
   text-transform: uppercase;
-  font-size: 1.2em; }
+  font-size: 16px; }
 
 .welcome {
   display: grid;
@@ -69,9 +69,9 @@
     height: 20em;
     margin: 1em; }
     .welcome .side-1 h2 {
-      font-size: 3em; }
+      font-size: 1.6rem; }
     .welcome .side-1 p {
-      font-size: 1.5em;
+      font-size: 1.2rem;
       padding: 2em; }
   .welcome .side-2 {
     height: 100vh;
@@ -90,40 +90,40 @@
   background-size: cover;
   background-position: center; }
   .find .buttons {
-    margin-left: 3em;
-    margin-top: 50em;
+    margin-left: 10em;
+    margin-top: 35em;
     position: absolute;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 1.5em; }
     .find .buttons .button {
-      padding: 2.5em 1em;
+      padding: 1.8em 11em;
       background: black;
       opacity: 0.3;
       border-style: none; }
     .find .buttons .button:hover {
       background: blue; }
     .find .buttons .b1 .button-text, .find .buttons .b2 .button-text, .find .buttons .b3 .button-text, .find .buttons .b1 .button-text2, .find .buttons .b2 .button-text2, .find .buttons .b3 .button-text2 {
-      font-size: 2em;
+      font-size: 1rem;
       color: white;
       position: absolute;
-      top: -15px;
+      top: -12px;
       left: 1em;
       z-index: 1;
       pointer-events: none; }
     .find .buttons .b1 .button-text2, .find .buttons .b2 .button-text2, .find .buttons .b3 .button-text2 {
-      font-size: 1.2em;
-      top: 24px;
-      left: 1.8em;
+      font-size: 1.2rem;
+      top: 10px;
+      left: 1rem;
       text-transform: uppercase; }
     .find .buttons .b2 .button-text, .find .buttons .b2 .button-text2 {
-      left: 19em; }
+      left: 24.5em; }
     .find .buttons .b2 .button-text2 {
-      left: 31.8em; }
+      left: 20.5em; }
     .find .buttons .b3 .button-text, .find .buttons .b3 .button-text2 {
-      left: 37em; }
+      left: 48em; }
     .find .buttons .b3 .button-text2 {
-      left: 61.8em; }
+      left: 40em; }
 
 .middle-welcome {
   height: auto;
@@ -135,11 +135,11 @@
       margin-top: 5em;
       margin-bottom: 1em;
       width: 80%;
-      font-size: 2.6em;
+      font-size: 1.2rem;
       text-align: left; }
     .middle-welcome .middle-side1 p {
       width: 65%;
-      font-size: 1.4em;
+      font-size: 1rem;
       text-align: left;
       line-height: 2.5em; }
   .middle-welcome .middle-side2 {
@@ -148,28 +148,29 @@
     background: url(../img/apartment4.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 23.5em;
-    margin-left: -15em;
+    margin-top: 15em;
+    margin-left: -10em;
     box-shadow: auto auto; }
   .middle-welcome .middle-side3 {
-    height: 55em;
-    width: 35em;
+    height: 40rem;
+    width: 25rem;
     background: blue;
-    margin: 13em 3em; }
+    margin: 8em 3em; }
     .middle-welcome .middle-side3 h2 {
       margin: 0 5em;
       margin-top: 5em;
-      font-size: 1.4em;
+      font-size: 1rem;
       text-align: center;
       line-height: 2em;
       color: white; }
     .middle-welcome .middle-side3 .icons {
-      margin: 5em 12.5em;
+      display: inline-block;
+      margin: 4rem 7.6rem;
       color: white; }
 
 .footer {
   display: grid;
-  grid-template-columns: 40em auto;
+  grid-template-columns: 30em auto;
   height: 20em;
   background: #676767;
   color: grey;
@@ -185,15 +186,16 @@
       position: absolute;
       margin-left: 25em;
       text-align: center;
-      align-self: flex-end; }
+      align-self: flex-end;
+      margin: 0 220px; }
     .footer .side2 .section-head {
       margin-top: 2.5em;
       margin-left: 8.5em;
       position: absolute; }
       .footer .side2 .section-head p {
         display: inline;
-        padding-right: 10.2em;
-        font-size: 1.6em;
+        padding-right: 15em;
+        font-size: 1rem;
         color: white; }
     .footer .side2 ul {
       margin-top: 6em;
@@ -205,6 +207,6 @@
         .footer .side2 ul li a {
           text-decoration: none;
           color: grey;
-          font-size: 1.3em; }
+          font-size: 1rem; }
         .footer .side2 ul li a:hover {
           color: lightgray; }
