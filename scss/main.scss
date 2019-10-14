@@ -40,7 +40,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  margin: 37em 38em;
+  margin: 28em 30em;
   z-index: 1;
   .arrow {
     padding-left: 25px;
@@ -87,7 +87,7 @@
       font-size: 1.6rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       padding: 2em;
     }
   }
@@ -112,14 +112,14 @@
   background-position: center;
 
   .buttons {
-    margin-left: 10em;
-    margin-top: 35em;
+    margin-left: 1em;
+    margin-top: 28em;
     position: absolute;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 1.5em;
     .button {
-      padding: 1.8em 11em;
+      padding: 1.5em 10.4em;
       background: black;
       opacity: 0.3;
       border-style: none;
@@ -190,7 +190,7 @@
 
     p {
       width: 65%;
-      font-size: 1rem;
+      font-size: 0.9rem;
       text-align: left;
       line-height: 2.5em;
     }
@@ -223,9 +223,9 @@
     }
 
     .icons {
-      display: inline-block;
-      margin: 4rem 7.6rem;
-
+      display: flex;
+      margin: 4rem auto;
+      justify-content: center;
       color: white;
     }
   }
@@ -234,7 +234,7 @@
 .footer {
   display: grid;
   grid-template-columns: 30em auto;
-  height: 20em;
+  height: 15em;
   background: darken($color: grey, $amount: 10);
   color: grey;
   position: relative;
@@ -254,36 +254,41 @@
       text-align: center;
       align-self: flex-end;
       margin: 0 220px;
+      font-size: 10px;
     }
 
     .section-head {
       margin-top: 2.5em;
-      margin-left: 8.5em;
+      margin-left: 8.2em;
       position: absolute;
 
       p {
         display: inline;
-        padding-right: 15em;
+        padding-right: 11em;
         font-size: 1rem;
         color: white;
       }
     }
-
-    ul {
-      margin-top: 6em;
+    .spacing {
+      display: grid;
+      margin-top: 4em;
+      grid-template-columns: 150px auto;
+      grid-gap: 118px;
       margin-left: 8em;
-      list-style: none;
-
-      li {
-        display: block;
-        padding: 10px;
-        a {
-          text-decoration: none;
-          color: grey;
-          font-size: 1rem;
-        }
-        a:hover {
-          color: lightgray;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: block;
+          padding: 5px;
+          a {
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+          }
+          a:hover {
+            color: lightgray;
+          }
         }
       }
     }
